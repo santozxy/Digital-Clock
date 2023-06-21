@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #6da2dee3, #010313f6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 13rem;
+  width: 35.375rem;
+  background: transparent;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 0.6rem;
+}
+
+.slot {
+  height: 10.625rem;
+  width: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba(5, 5, 5, 0.9);
+  border-radius: 0.6rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  letter-spacing: 3px;
+}
+
+.clock span {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.clock span.time {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 590px) {
+  .clock {
+    flex-direction: column;
+    width: 13rem;
+    height: 35.375rem;
+  }
+}
